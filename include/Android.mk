@@ -12,4 +12,7 @@ ifeq ($(TARGET_USES_GRALLOC1), true)
 else
     LOCAL_EXPORT_C_INCLUDE_DIRS += $(display_top)/libgralloc
 endif
+
+LOCAL_EXPORT_HEADER_LIBRARY_HEADERS := libhardware_headers
+
 include $(BUILD_HEADER_LIBRARY)
