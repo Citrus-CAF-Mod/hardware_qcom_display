@@ -33,7 +33,7 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_EXPORT_C_INCLUDE_DIRS     := $(LOCAL_PATH)
-LOCAL_SHARED_LIBRARIES          := liblog libcutils
+LOCAL_SHARED_LIBRARIES          := $(common_libs)
 LOCAL_C_INCLUDES                := $(common_includes)
 LOCAL_ADDITIONAL_DEPENDENCIES   := $(common_deps)
 LOCAL_SRC_FILES                 := qdMetaData.cpp qd_utils.cpp
