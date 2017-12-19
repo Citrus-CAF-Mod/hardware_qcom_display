@@ -36,7 +36,7 @@ include $(CLEAR_VARS)
 
 LOCAL_COPY_HEADERS_TO           := $(common_header_export_path)
 LOCAL_COPY_HEADERS              := qdMetaData.h qd_utils.h
-LOCAL_SHARED_LIBRARIES          := liblog libcutils
+LOCAL_SHARED_LIBRARIES          := $(common_libs) 
 LOCAL_C_INCLUDES                := $(common_includes)
 LOCAL_ADDITIONAL_DEPENDENCIES   := $(common_deps)
 LOCAL_SRC_FILES                 := qdMetaData.cpp qd_utils.cpp
