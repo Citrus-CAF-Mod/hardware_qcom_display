@@ -41,6 +41,7 @@
 #endif
 
 #include <errno.h>
+#include <string.h>
 #include <utils/Trace.h>
 #include "gralloc_priv.h"
 #include "ionalloc.h"
