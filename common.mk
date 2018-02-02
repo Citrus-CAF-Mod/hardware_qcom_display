@@ -6,6 +6,8 @@ common_includes += $(call project-path-for,qcom-display)/libqdutils
 common_includes += $(call project-path-for,qcom-display)/libhwcomposer
 common_includes += $(call project-path-for,qcom-display)/libhdmi
 common_includes += $(call project-path-for,qcom-display)/libqservice
+common_includes += $(call project-path-for,qcom-display)/include
+
 
 common_header_export_path := qcom/display
 
@@ -37,6 +39,9 @@ ifeq ($(TARGET_USES_QCOM_BSP),true)
 # Enable QCOM Display features
     common_flags += -DQTI_BSP
 endif
+
+common_flags += -isystem $(TARGET_OUT_HEADERS)/qcom/display
+
 ifneq ($(call is-platform-sdk-version-at-least,18),true)
     common_flags += -DANDROID_JELLYBEAN_MR1=1
 endif
