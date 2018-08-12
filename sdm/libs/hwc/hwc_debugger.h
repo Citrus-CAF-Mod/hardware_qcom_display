@@ -34,7 +34,7 @@
 
 #include <core/sdm_types.h>
 #include <core/debug_interface.h>
-#include <cutils/log.h>
+#include <log/log.h>
 #include <utils/Trace.h>
 
 #define DLOG(Macro, format, ...) Macro(__CLASS__ "::%s: " format, __FUNCTION__, ##__VA_ARGS__)
