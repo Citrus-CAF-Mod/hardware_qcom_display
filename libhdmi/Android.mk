@@ -10,5 +10,6 @@ LOCAL_SHARED_LIBRARIES        := $(common_libs) liboverlay libqdutils
 LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdhdmi\" -Wno-float-conversion
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 LOCAL_SRC_FILES               := hdmi.cpp
+LOCAL_HEADER_LIBRARIES	      := libbinder_headers
 
 include $(BUILD_SHARED_LIBRARY)
